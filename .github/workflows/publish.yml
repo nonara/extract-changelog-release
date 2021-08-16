@@ -31,7 +31,7 @@ jobs:
           CI: true
 
       - name: Generate Release Body
-        run: npx extract-changelog-release > RELEASE_BODY.md
+        run: node dist/index.js > RELEASE_BODY.md
 
       - name: Publish to NPM
         run: npm publish
