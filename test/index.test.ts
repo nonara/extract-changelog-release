@@ -26,13 +26,18 @@ const modes = [ 'Programmatic', 'CLI' ] as const;
  * ****************************************************************************************************************** */
 
 function extract(mode: typeof modes[number], logPath?: string) {
-  if (mode === 'Programmatic') return extractLog(logPath);
+  let res: string;
+  if (mode === 'Programmatic') {
+    res = extractLog(logPath);
+  } else {
+    const cwd = process.cwd();
+    const cmd = `ts-node -T ${srcIndexPath}${logPath ? ` ${logPath}` : '' }`;
+    res = child_process
+      .execSync(cmd, { cwd, stdio: 'pipe' })
+      .toString();
+  }
 
-  const cwd = process.cwd();
-  const cmd = `ts-node -T ${srcIndexPath}${logPath ? ` ${logPath}` : '' }`;
-  return child_process
-    .execSync(cmd, { cwd, stdio: 'pipe' })
-    .toString();
+  return res.replace(/\r?\n/g, '\n');
 }
 
 
