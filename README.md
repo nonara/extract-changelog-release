@@ -4,7 +4,9 @@
 [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fnonara%2Fextract-changelog-release%2Fbadge&style=flat)](https://actions-badge.atrox.dev/nonara/extract-changelog-release/goto)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
-Extract release notes from latest entry in standard-version changelog (can be used for automating GH releases with standard-version)
+Extract release notes from latest entry in standard-version changelog.
+
+This project can be used for automating GH releases with standard-version — see [GH Actions](#GH-Actions) example.
 
 ## Usage
 
