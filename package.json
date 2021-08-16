@@ -1,0 +1,40 @@
+{
+  "name": "extract-changelog-release",
+  "version": "1.0.0",
+  "description": "Extract release notes from latest entry in standard-version changelog",
+  "main": "dist/index.js",
+  "scripts": {
+    "compile": "tsc",
+    "build": "yarn clean && yarn compile",
+    "clean": "rimraf dist",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nonara/extract-changelog-release.git"
+  },
+  "author": "Ron S.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nonara/extract-changelog-release/issues"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "homepage": "https://github.com/nonara/extract-changelog-release#readme",
+  "dependencies": {
+    "minimist": "^1.2.5"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.5",
+    "rimraf": "^3.0.2",
+    "@types/node": "^16.6.1",
+    "@types/minimist": "^1.2.2",
+    "ts-node": "^10.2.0",
+    "jest": "^27.0.6",
+    "@types/jest": "^27.0.1",
+    "ts-jest": "^27.0.4"
+  }
+}

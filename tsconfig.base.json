@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "declaration": false,
+
+    "lib": [ "esnext" ],
+    "target": "es2015",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+
+    "strict": true,
+    "preserveConstEnums": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "preserveSymlinks": true
+  }
+}
