@@ -23,6 +23,18 @@
     "README.md",
     "CHANGELOG.md"
   ],
+  "keywords": [
+    "GitHub Actions",
+    "GH Actions",
+    "actions",
+    "standard-version",
+    "conventional-commits",
+    "conventional commits",
+    "automation",
+    "automating",
+    "GitHub Release",
+    "GH release"
+  ],
   "homepage": "https://github.com/nonara/extract-changelog-release#readme",
   "dependencies": {
     "minimist": "^1.2.5"
