@@ -1,6 +1,6 @@
 {
   "name": "extract-changelog-release",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Extract release notes from latest entry in standard-version changelog",
   "main": "./dist/index.js",
   "bin": "./dist/index.js",
