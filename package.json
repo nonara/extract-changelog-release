@@ -2,7 +2,8 @@
   "name": "extract-changelog-release",
   "version": "1.0.1",
   "description": "Extract release notes from latest entry in standard-version changelog",
-  "main": "dist/index.js",
+  "main": "./dist/index.js",
+  "bin": "./dist/index.js",
   "scripts": {
     "compile": "tsc",
     "build": "yarn clean && yarn compile",

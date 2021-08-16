@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import path from 'path';
 import * as fs from 'fs';
 import minimist from 'minimist';
